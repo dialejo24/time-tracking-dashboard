@@ -5,15 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script type="module" src="javascript/script.js" defer></script>
+  <script src="javascript/script.js" defer></script>
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 <body>
-
+  <div class="container">
+    <main>
+      <div class="user_info">
+        <div class="user">
+          <div class="profile_picture">
+            <img src="images/image-jeremy.png" alt="profile picture">
+          </div>
+          <p>report for<br><span class="name">Jeremy Robson</span></p>
+        </div>
+        <div class="periodicity">
+          <ul>
+            <li>Daily</li>
+            <li>Weekly</li>
+            <li>Monthly</li>
+          </ul>
+        </div>
+      </div>
+      <div class="work_card">
+        <div class="info">
+          <div class="header">
+            <h3>Work</h3>
+            <div class="dots">...</div>
+          </div>
+          <div class="hours">
+            <p class="current_hours">32hrs</p>
+            <p class="past_hours">Last week-32hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="play_card">
+        <div class="info">
+          <div class="header">
+            <h3>Play</h3>
+            <div class="dots">...</div>
+          </div>
+          <div class="hours">
+            <p class="current_hours">10hrs</p>
+            <p class="past_hours">Last week - 8hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="study_card">
+        <div class="info">
+          <div class="header">
+            <h3>Study</h3>
+            <div class="dots">...</div>
+          </div>
+          <div class="hours">
+            <p class="current_hours">4hrs</p>
+            <p class="past_hours">Last week - 7hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="exercise_card">
+        <div class="info">
+          <div class="header">
+            <h3>Exercise</h3>
+            <div class="dots">...</div>
+          </div>
+          <div class="hours">
+            <p class="current_hours">4hrs</p>
+            <p class="past_hours">Last week - 5hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="social_card">
+        <div class="info">
+          <div class="header">
+            <h3>Social</h3>
+            <div class="dots">...</div>
+          </div>
+          <div class="hours">
+            <p class="current_hours">5hrs</p>
+            <p class="past_hours">Last week - 10hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="selfcare_card">
+        <div class="info">
+          <div class="header">
+            <h3>Self Care</h3>
+            <div class="dots">...</div>
+          </div>
+          <div class="hours">
+            <p class="current_hours">2hrs</p>
+            <p class="past_hours">Last week - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/dialejo24">Diego Diaz</a>.
   </div>
 </body>
 </html>
