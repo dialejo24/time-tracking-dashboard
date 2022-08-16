@@ -24,33 +24,63 @@ body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--very-dark-blue);
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-block:3em;
+}
+main {
+    width:90%;
+    display: grid;
+    gap:1.5em;
+}
 li {
     list-style-type:none;
 }
 
-.card {
+.card,
+.user_info {
     background-color: var(--dark-blue);
-    border-radius: 10px;
+    border-radius: 15px;
 }
+
 .user {
     background-color: var(--blue);
-    border-radius: 10px;
+    border-radius: 15px;
     font-weight: 300;
+    display: flex;
+    padding-block: 2em;
+    padding-left:1.5em;
+    align-items: center;
+}
+.profile_picture {
+    width:25%;
 }
 .profile_picture img {
     border:2px solid white;
     border-radius: 50%;
+    display: block;
+    width: 100%;
 }
-.profile_picture + p {
+.profile_picture + div {
+    margin-left: 1em;
+}
+.profile_picture + div > p:first-child {
     color: var(--pale-blue);
     font-size:.9rem;
+    line-height: 1.5;
 }
 .name {
     font-size:1.5rem;
     color:white;
 }
 .periodicity ul {
-    color: var(--desaturated-blue)
+    color: var(--desaturated-blue);
+    display: flex;
+    justify-content: space-around;
+    padding-block: 1.5em;
 }
 .periodicity li:first-child + li {
     color:whitesmoke;
@@ -58,7 +88,7 @@ li {
 
 h3 {
     color:white;
-    font-weight: 400;
+    font-weight: 500;
     font-size:1.125rem;
 }
 .dots ul {
@@ -66,20 +96,71 @@ h3 {
     gap:3px;
 }
 .dot {
-    width:3px;
-    height:3px;
+    width:4px;
+    height:4px;
     border-radius: 50%;
     background-color: var(--pale-blue);
 }
 .current_hours {
     color: white;
     font-weight: 300;
-    font-size:1.6rem;
+    font-size:2rem;
 }
 .past_hours {
-    color: var(--desaturated-blue);
+    color: var(--pale-blue);
     font-weight: 300;
     font-size: .9rem;
+}
+
+.info {
+    padding:1.5em;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    margin-top: 2em
+}
+.header {
+    margin-bottom: .5em;
+}
+.header,
+.hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    background-repeat: no-repeat;
+    background-size: 4.2em;
+}
+.work_card {
+    background-color: var(--light-red);
+    background-image: url("../images/icon-work.svg");
+    background-position: right 15px top -10px;
+}
+.play_card {
+    background-color: var(--soft-blue);
+    background-image: url("../images/icon-play.svg");
+    background-position: right 19px top -5px;
+}
+.study_card {
+    background-color: var(--light-red-study);
+    background-image: url("../images/icon-study.svg");
+    background-position: right 15px top -5px;
+}
+.exercise_card {
+    background-color: var(--lime-green);
+    background-image: url("../images/icon-exercise.svg");
+    background-position: right 15px top -1px;
+}
+.social_card {
+    background-color: var(--violet);
+    background-image: url("../images/icon-social.svg");
+    background-position: right 15px top -15px;
+}
+.selfcare_card {
+    background-color: var(--soft-orange);
+    background-image: url("../images/icon-self-care.svg");
+    background-position: right 15px top -17px;
 }
 
 .attribution { 
