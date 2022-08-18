@@ -40,6 +40,9 @@ main {
 li {
     list-style-type:none;
 }
+a {
+    text-decoration: none;
+}
 
 .card,
 .user_info {
@@ -78,13 +81,23 @@ li {
     color:white;
 }
 .periodicity ul {
-    color: var(--desaturated-blue);
     display: flex;
     justify-content: space-around;
     padding-block: 1.5em;
 }
-.periodicity li:first-child + li {
+.periodicity li a {
+    color: var(--desaturated-blue);
+    transition: color .25s ease;
+}
+.periodicity li a:focus {
+    color:white;
+}
+.periodicity li:first-child + li a {
     color:whitesmoke;
+}
+.periodicity a:hover {
+    color:white;
+    cursor:pointer;
 }
 
 h3 {
@@ -95,6 +108,9 @@ h3 {
 .dots ul {
     display: flex;
     gap:3px;
+}
+.dots ul:hover div {
+    background-color:white;
 }
 .dot {
     width:4px;
@@ -117,8 +133,14 @@ h3 {
     padding:1.5em;
     background-color: var(--dark-blue);
     border-radius: 15px;
-    margin-top: 2em
+    margin-top: 2em;
+    transition:background-color .25s ease-out;
 }
+.info:hover {
+    cursor: pointer;
+    background-color: hsl(230, 46%, 30%);;
+}
+
 .header {
     margin-bottom: .5em;
 }
